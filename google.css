@@ -1,115 +1,157 @@
 .logo {
-    width: 20%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    height: 92px;
-    top: 50%;
+  max-width: 100%;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  height: 92px;
+  top: 50%;
 }
 
 nav {
-    text-align: right;
-    color: black;
-    font: inherit;
+  display: flex;
+  text-align: right;
+  color: black;
+  font: inherit;
 }
 .search-bar {
-    width: 40%;
-    border-radius: 25px;
-    height: 40px;
-    text-align: left;
-    border: 2px lightgray;
-    border-style: solid;
-    margin: 25px auto;
-    position: relative;
+  width: 50%;
+  border-radius: 25px;
+  height: 40px;
+  text-align: left;
+  border: 2px lightgray;
+  border-style: solid;
+  margin: 25px auto;
+  position: relative;
+}
 
-  }
-  
-  input[type="text"] {
-    width: 90%;
-    height: 30px;
-    border-radius: 4px;
-    padding: 0 16px;
-    margin: 3px;
-    box-sizing: border-box;
-    border: none;
-  }
-  
-  .search {
-    height: 40px;
-    width: 24px;
-    float: left;
-    vertical-align: middle;
-    padding: 8px;
-  }
-  
-  .mic {
-    height: 40px;
-    width: 24px;
-    float: right;
-    vertical-align: middle;
-  }
+input[type="text"] {
+  width: 90%;
+  height: 30px;
+  border-radius: 4px;
+  padding: 0 16px;
+  margin: 3px;
+  box-sizing: border-box;
+  border: none;
+}
 
+.search {
+  height: 40px;
+  width: 24px;
+  float: left;
+  vertical-align: middle;
+  padding: 8px;
+  display: flex;
+}
+
+.mic {
+  height: 40px;
+  width: 24px;
+  float: left;
+  vertical-align: left;
+  display: flex;
+}
 
 .search-bar {
-    font-size: 14px;
-    font-family: arial, sans-serif;
-    text-align: center;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+  font-size: 14px;
+  font-family: arial, sans-serif;
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
 }
 
 .button {
-    margin-left: 40%;
-    margin-right: auto;
-    padding: 10px;
+  margin-left: 40%;
+  margin-right: auto;
+  padding: 10px;
+  display: flex;
 }
 
 button {
-    background-color: #f2f2f2;
-    border: 1px solid #f2f2f2;
-    border-radius: 4px;
-    font-family: arial,sans-serif;
-    font-size: 14px;
-    margin: 11px 4px;
-    padding: 10px;
+  background-color: #f2f2f2;
+  border: 1px solid #f2f2f2;
+  border-radius: 4px;
+  font-family: arial, sans-serif;
+  font-size: 14px;
+  margin: 11px 4px;
+  padding: 10px;
+  display: flex;
 }
 
 .navbar {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 150px;
+  color: black;
+}
+
+.A {
+  color: black;
+  justify-content: space-evenly;
+  margin: 20px;
+}
+
+footer {
+  display: inline;
+  position: fixed;
+  bottom: 0px;
+  justify-content: space-between;
+  background-color: rgb(240, 240, 240);
+  min-width: 100%;
+  padding: 10px;
+}
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.bottom-right-side {
+  float: right;
+}
+
+.bottom-left-side {
+  float: left;
+}
+
+.material-icons {
+  display: flex;
+}
+
+@media screen and (max-width: 1000px) {
+  .button {
+    margin-left: 37%;
+    margin-right: auto;
+    padding: 10px;
     display: flex;
-    justify-content: space-between;
-    margin-bottom:150px;
-    color: black;
   }
+}
 
-
-  .A {
-      color: black;
-      justify-content: space-evenly;
-      margin:20px;
-  }
-
-  footer {
-      display: inline;
-      position: fixed;
-      bottom: 0px;
-      justify-content: space-between;
-      background-color:rgb(240,240,240);
-      min-width: 100%;
-      padding: 10px;
-      
-  }
-
-  .links {
+@media screen and (max-width: 896px) {
+  .button {
+    margin-left: 35%;
+    margin-right: auto;
+    padding: 10px;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between
   }
+}
 
-  .bottom-right-side {
-    float: right;
+@media screen and (max-width: 768px) {
+  .button {
+    margin-left: 30%;
+    margin-right: auto;
+    padding: 10px;
+    display: flex;
   }
+}
 
-  .bottom-left-side {
-    float: left;
+@media screen and (max-width: 640px) {
+  .button {
+    margin-left: 25%;
+    margin-right: auto;
+    padding: 10px;
+    display: flex;
   }
+}
